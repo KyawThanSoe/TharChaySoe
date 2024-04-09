@@ -4,6 +4,7 @@
   --color-accent: #ff3400;
   --color-headings: #1b0760;
   --color-body: #918ca4;
+  --color-border: #ccc;
 }
 *,
 *::after,
@@ -211,11 +212,11 @@ a {
 /* Inputs */
 .input {
   border-radius: 40px;
-  border: 1px solid #ccc;
   color: var(--color-headings);
   font-size: 2rem;
   outline: 0;
   padding: 1.5rem 3.5rem;
+  border: 1px solid var(--color-headings);
 }
 ::placeholder {
   color: #cdcbd7;
@@ -224,4 +225,20 @@ a {
   .input {
     font-size: 1.5rem;
   }
+}
+
+/* Input Fields */
+.input-group {
+  border: 1px solid var(--color-border);
+  border-radius: 40px;
+  display: flex;
+}
+
+.input-group .input {
+  border: 0;
+  flex-grow: 1;
+  padding: 1.5rem 2rem;
+}
+.input-group .btn {
+  margin: 4px;
 }
