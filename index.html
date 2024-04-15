@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -29,7 +29,7 @@
   <body>
     <header>
       <nav class="nav collapsible">
-        <a href="/">
+        <a aria-label="fancywebhoster" href="/">
           <img class="nav__brand" src="images/logo.svg" alt="" />
         </a>
         <svg class="icon icon--white nav__toggler">
@@ -75,7 +75,12 @@
         </p>
       </header>
       <div class="input-group">
-        <input class="input" type="text" placeholder="Enter Your Name" />
+        <input
+          aria-label="SearchDomain"
+          class="input"
+          type="text"
+          placeholder="Enter Your Name"
+        />
         <button class="btn btn--accent">
           <svg class="icon icon--primary domain-block__icon">
             <use href="images/sprite.svg#search"></use>
@@ -363,6 +368,7 @@
             <img
               src="images/testimonial.jpg"
               alt="A happy, smilling customer"
+              srcset="images/testimonial.webp 1x, images/testimonial.jpg 1x"
             />
             <span class="icon-container icon-container--accent">
               <svg class="icon icon--white icon--small">
